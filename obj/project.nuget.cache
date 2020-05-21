@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "tJrlOS0ALCghC68Zx7ZAJbTcarOo2uB7Z9RqyJLA5+l+/p6h1v7QZGS3YRXkeuxK3/5kZAbnFyZxowOGfre7nQ==",
+  "dgSpecHash": "+l3oc2dAsAokXZvM5lYg/YLSr7dNyS16+vNA6RJpd501Z4F2gJ38cbxB3jwV4Gn/7kH2rjGDawlhJwHg1i8T3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\maira\\dev\\Shop\\Shop.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\maira\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\maira\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\maira\\.nuget\\packages\\swashbuckle.aspnetcore\\5.0.0\\swashbuckle.aspnetcore.5.0.0.nupkg.sha512",
+    "C:\\Users\\maira\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.0.0\\swashbuckle.aspnetcore.swagger.5.0.0.nupkg.sha512",
+    "C:\\Users\\maira\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.0.0\\swashbuckle.aspnetcore.swaggergen.5.0.0.nupkg.sha512",
+    "C:\\Users\\maira\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.0.0\\swashbuckle.aspnetcore.swaggerui.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
