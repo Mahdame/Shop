@@ -18,3 +18,9 @@ C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\staticwebassets\Shop.StaticWebAs
 C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\Shop.dll
 C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\Shop.pdb
 C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\Shop.genruntimeconfig.cache
+C:\Users\maira\dev\Shop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\maira\dev\Shop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\maira\dev\Shop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\maira\dev\Shop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\Shop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\maira\dev\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CopyComplete

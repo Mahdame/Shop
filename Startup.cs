@@ -1,10 +1,12 @@
 using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Shop.Data;
 
 namespace Shop
 {
@@ -21,6 +23,14 @@ namespace Shop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Injecão de Dependência
+            // Scoped = 1 (mesmo) DataContext por requisição. Toda vez que a requisição acaba, 
+            // o DataContext é destruído, destruindo assim a conexão com o db.
+            // Transiente = 1 DataContext novo (novo objeto) por requisição.
+            // Singleton = 1 instância do DataContext por aplicação.
+            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            services.AddScoped<DataContext, DataContext>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -64,7 +74,6 @@ namespace Shop
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.RoutePrefix = string.Empty;
             });
 
             app.UseRouting();
