@@ -29,7 +29,8 @@ namespace Shop
             // o DataContext é destruído, destruindo assim a conexão com o db.
             // Transiente = 1 DataContext novo (novo objeto) por requisição.
             // Singleton = 1 instância do DataContext por aplicação.
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             services.AddScoped<DataContext, DataContext>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
